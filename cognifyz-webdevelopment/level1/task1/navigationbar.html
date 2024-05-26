@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Navigation Menu</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar li {
+            width: 150px;
+            float: left;
+        }
+
+        .navbar li a {
+            font-size: 25px;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #757474;
+        }
+        .home ,.about ,.contact {
+            height: 600px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="home" id="home">
+        <H1>Home</H1>
+    </div>
+    <div class="about" id="about">
+        <H1>About</H1>
+    </div>
+    <div class="contact" id="contact">
+        <H1>Contact Us</H1>
+    </div>
+</body>
+</html>

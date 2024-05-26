@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(245, 158, 158);
+        }
+        .color-change-button {
+            width: 200px;
+            background-color: rgb(169, 103, 231);
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+        }
+        label,p {
+            font-size: 30px;
+            background-color: rgb(59, 47, 47);
+            color: transparent;
+            background-clip: text;
+
+        }
+        input {
+            width: 200px;
+            height: 25px;
+        }
+        div {
+            width: 650px;
+            height: 480px;
+            border-radius: 20px;
+            background-color: bisque;
+            text-align: center;
+        }
+        .center {
+            margin: auto;
+            width: 60%;
+            padding: 10px;
+        }
+        tr {
+            text-align: left;
+        }
+        h1{
+            font-size: 4vw;
+            font-weight: 600;
+            background-image: linear-gradient(to right, #553c9a, #ee4b2b);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-family: lucida handwriting;
+        }
+    </style>
+</head>
+<body>
+    <div class="center" style="height: 80px; background-color: transparent;"></div>
+    <div class="center">
+        <h1>calculator</h1>
+        <table>
+            <tr>
+                <th><label for="num1" >Enter the first number:</label></th>
+                <th><input type="number" id="num1"><br></th>
+            </tr>
+            <tr>
+                <th><label for="num2">Enter the second number:</label></th>
+                <th><input type="number" id="num2"><br></th>
+            </tr>
+        </table>
+        <button class="color-change-button" onclick="addNumbers()" style="background-color: rgb(247, 130, 146);">Add</button>
+        <button class="color-change-button" onclick="subNumbers()" style="background-color: rgb(247, 130, 146);">Sub</button><br>
+        <button class="color-change-button" onclick="mulNumbers()" style="background-color: rgb(247, 130, 146);">Mul</button>
+        <button class="color-change-button" onclick="divNumbers()" style="background-color: rgb(247, 130, 146);">Div</button><br>
+        <p id="result"></p>
+    </div>
+    <script>
+        function addNumbers() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').textContent = 'Please enter valid numbers.';
+            } else {
+                const sum = num1 + num2;
+                document.getElementById('result').textContent = `Result: ${sum}`;
+            }
+        }
+        function subNumbers() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').textContent = 'Please enter valid numbers.';
+            } else {
+                const sum = num1 - num2;
+                document.getElementById('result').textContent = `Result: ${sum}`;
+            }
+        }
+        function mulNumbers() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').textContent = 'Please enter valid numbers.';
+            } else {
+                const sum = num1 * num2;
+                document.getElementById('result').textContent = `Result: ${sum}`;
+            }
+        }
+        function divNumbers() {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').textContent = 'Please enter valid numbers.';
+            } else {
+                const sum = num1 / num2;
+                document.getElementById('result').textContent = `Result: ${sum}`;
+            }
+        }
+    </script>
+</body>
+</html>

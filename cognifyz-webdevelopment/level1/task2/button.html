@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(165, 164, 164);
+        }
+        .color-change-button {
+            width: 200px;
+            background-color: rgb(169, 103, 231);
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>   
+    <div style="height: 300px;"></div>
+    <button class="color-change-button"  id="colorButton" >Color change</button>
+    <script>
+        const button = document.getElementById('colorButton');
+        button.addEventListener('click', () => {
+            
+            const randomColor1 = '#' + Math.floor(Math.random()*16777215).toString(16);
+            const randomColor2 = '#' + Math.floor(Math.random()*16777215).toString(16);
+
+            button.style.backgroundColor = randomColor1;
+            document.body.style.backgroundColor = randomColor2;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        body {
+            background-color: #e7e7e7;
+        }
+         ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar li {
+            width: 150px;
+            float: left;
+        }
+
+        .navbar li a {  
+            font-size: 25px;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover {
+            background-color: #757474;
+        }
+        .home ,.contact ,.intern ,.qualify ,.benefits ,.about ,.action       {  
+            background-color: rgb(250, 249, 249);
+            text-align: center;
+        }
+        .home ,.action {
+            height: 600px;
+        }
+        h2 {
+            text-align: center;
+            font-size: 40px;
+            font-weight: 600;
+            background-image: linear-gradient(to right, #919191 15%, #3c3c42);
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            font-family: lucida handwriting;
+        }
+        p {
+            font-size: 25px;
+        }
+                        
+        .applybutton {
+            width: 200px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+
+            border-radius: 50px;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .applybutton:hover {
+            background-position: 100% 0;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .applybutton:focus {
+            outline: none;
+        }
+        .applybutton.color {
+            background-image: linear-gradient(to right,  #a0a0a0, #4e4e4e, #9b9b9c, #545455);
+            box-shadow: 0 4px 15px 0 rgba(46, 46, 46, 0.75);
+        }
+                        
+        .learnbutton {
+            width: 200px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+
+            border-radius: 50px;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .learnbutton:hover {
+            background-position: 100% 0;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .learnbutton:focus {
+            outline: none;
+        }
+        .learnbutton.color {
+            background-image: linear-gradient(to right, #a0a0a0, #4e4e4e, #9b9b9c, #545455);
+            box-shadow: 0 4px 15px 0 rgba(8, 8, 8, 0.75);
+        }
+    </style>
+</head>
+    <body>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#intern">Internship</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#qualify">Qualification</a></li>
+            <li><a href="#action">Action</a></li>
+        </ul>
+        <div class="home" id="home">
+            <H1>Home</H1>
+            <div style="height: 150px;"></div>
+            <h2>Web Developer Internship <br> at Cognifyz Technologies</h2>
+        </div>
+        <div class="about" id="about">
+            <H1>About Us</H1>
+            <div style="text-align: left;">
+                <p>Cognifyz Technologies is a leading technology company that
+                    specializes in the dynamic field of data science and excels in
+                    delivering impactful projects and solutions.</p>
+                    <p><b>1. </b>The company offers a wide range of products and services,
+                        including artificial intelligence (AI), machine learning (ML), and
+                        data analytics tools.</p>
+                    <p><b>2. </b>Cognifyz Technologies also provides training programs to
+                        enhance skills and knowledge in these areas.</p>
+                    <p><b>3. </b>The company focuses on delivering innovative and cutting-edge                        
+                        solutions to meet the evolving needs of businesses.</p>
+            </div>
+        </div>
+        <div class="intern" id="intern">
+            <H1>Internship Program Overview</H1>
+            <div style="text-align: left;">
+                <p><b>Cognifyz Technologies offers an exciting internship program that 
+                    provides hands-on experience in various aspects of web development. 
+                    As an intern, you’ll have the opportunity to work on real-world projects, 
+                    collaborate with experienced developers, and enhance
+                     your skills. Here are the key points about the program:</b></p>
+                <p><b>1. Duration:</b> 
+                    The internship program typically runs for 10-12 weeks, 
+                    depending on the specific project and your availability.</p>
+                <p><b>2. Focus Areas:</b>
+                    <b>Web Development:</b> You’ll gain practical experience in web development technologies, 
+                    including HTML, CSS, JavaScript, and more.
+                    <b>API Integration:</b> If you’re interested in working with APIs, there may be opportunities 
+                    to integrate third-party APIs into web applications.
+                    <b>Responsive Design:</b> You’ll learn how to create responsive web pages that adapt to 
+                    different screen sizes (e.g., desktop, tablet, mobile).</p>
+                <p><b>3. Mentorship and Learning:</b> During the internship, you’ll be paired with a mentor who will 
+                    guide you through the projects. You’ll also have access to learning resources and workshops.</p>
+                <p><b>4. Project Work:</b> Interns typically work on specific projects related to web development. These 
+                    projects could involve building web pages, creating interactive features, or improving existing 
+                    applications</p>
+                <p><b>5. Skill Enhancement:</b> The internship is a great chance to enhance your coding skills, 
+                    learn best practices, and gain insights into the industry.</p>
+            </div>
+        </div>
+        <div class="benefits" id="benefits">
+            <H1>Internship Benefits</H1>
+            <div style="text-align: left;">
+                <p> <b>Real-World Experience:</b>As an intern at Cognifyz, you’ll have the opportunity to work on actual projects. 
+                    This hands-on experience is invaluable for your professional growth. You’ll apply what you’ve learned in a practical
+                     setting, gaining insights into real-world challenges and solutions.</p>
+                    <p><b>Mentorship:</b> Cognifyz provides mentorship to its interns. You’ll be paired with experienced developers who 
+                        will guide you throughout your internship. They’ll offer advice, answer your questions, and help you improve your skills.
+                         Having a mentor accelerates your learning curve and ensures you’re on the right track.</p>
+                    <p><b>Networking: </b> Internships are excellent for building your professional network. You’ll interact with 
+                        colleagues, managers, and other interns. These connections can lead to future job opportunities, references,
+                         and collaborations. Attend company events, 
+                        participate in team meetings, and engage with your peers—it’s a chance to expand your circle.</p>
+                    <p><b>Skill Enhancement: </b>The internship exposes you to various technologies and tools. Whether
+                         it’s web development, API integration, or responsive design, you’ll learn new skills and 
+                        enhance existing ones. This knowledge will serve you well in your future career.</p>
+                    <p><b>Resume Boost: </b>Having an internship at a reputable company like Cognifyz adds weight
+                         to your resume. Employers appreciate candidates with practical experience. Highlight your 
+                         internship prominently when applying for full-time positions—it’ll make you stand out.</p>
+                        <p><b>Company Culture: </b> Internships give you a glimpse into the company’s culture.
+                             You’ll learn how teams collaborate, how decisions are made, and what values the 
+                             organization holds. Understanding the work environment helps you assess if it’s a
+                              good fit for your long-term goals.</p>
+            </div>
+        </div>
+        <div class="qualify" id="qualify">
+            <H1>Qualification</H1>
+            <div  style="text-align: left;">
+                <p><b>Basic Understanding of HTML, CSS, and JavaScript: </b>Proficiency in these fundamental 
+                    web technologies is essential. You’ll be working with them extensively during the internship.</p>
+                <p><b>Familiarity with Front-End Frameworks:</b>Experience with front-end frameworks like React, 
+                    Angular, or Vue.js is a plus. These frameworks 
+                    are widely used in modern web development, and having knowledge of them will be beneficial.</p>
+                <p><b>Problem-Solving Skills:</b>
+                    Strong problem-solving and analytical abilities are valuable. As a web developer, you’ll 
+                    encounter challenges, and being able to troubleshoot and find solutions is crucial.</p>
+                <p><b>Interest and Hard Work:</b>
+                    The first qualification is your passion for web development and your willingness to put in the effort. Show your enthusiasm and eagerness to learn!</p>
+                    <p><b>Minimum PC Requirements:</b>
+                    Ensure that your computer meets the minimum requirements for web development. A reliable machine with decent processing power and memory is necessary.</p>
+            </div>
+        </div>
+        <div class="action" id="action">
+            <H1>Action</H1>
+            <div style="height: 200px;"></div>
+            <button class="applybutton color" onclick="window.location.href = 'https://lnkd.in/dmzaQAvN';" style="background-color: rgb(136, 96, 96);">Apply Here</button>
+            <button class="learnbutton color" onclick="window.location.href = 'https://www.linkedin.com/company/cognifyz-techonologies/';" style="background-color: rgb(136, 96, 96);">Learn More</button>
+        </div>
+        <footer style="text-align: center;">
+            <p style="font-size: 20px;">Contact Us <br>
+                linkedin:@cognifyz-techonologies <br>
+                email:contact@cognifyz.com <br>
+                website:www.cognifyz.com <br>
+                instagram:@cognifyz_tech
+            </p>                
+        </footer>
+    </body>
+
+    </body>

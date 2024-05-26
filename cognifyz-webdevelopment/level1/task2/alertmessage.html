@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+        }
+                
+        .alertbutton {
+            width: 200px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            margin: 20px;
+            height: 55px;
+            text-align:center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .alertbutton:hover {
+            background-position: 100% 0;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+
+        .alertbutton:focus {
+            outline: none;
+        }
+        .alertbutton.color {
+            background-image: linear-gradient(to right, #667eea, #764ba2, #6B8DD6, #8E37D7);
+            box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 300px;"></div>
+    <button class="alertbutton color" onclick="timealert()" style="background-color: rgb(136, 96, 96);">Alert Button</button>
+    <script>
+        function timealert(){
+            var hours = new Date().getHours();
+            var mintues = new Date().getMinutes();
+            var AM_PM = hours >= 12 ? 'PM' : 'AM';
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+
+            if (hours < 10){
+                hours = "0"+hours;
+            }
+            if (mintues < 10){
+                mintues = "0"+mintues;
+            }
+
+            var time = hours + ":" + mintues+ " " + AM_PM;
+
+            var greeting;
+            if (time < 10){
+                greeting = "Good morning its "+time;
+            } else if (time < 20){
+                greeting = "Good day its "+time;
+            }                   
+            else{
+                greeting = "Good evening its "+time;
+            }
+            alert(greeting);
+        }
+    </script>
+</body>
+</html>
